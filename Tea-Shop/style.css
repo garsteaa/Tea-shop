@@ -1,0 +1,278 @@
+*{
+  font-size: 22px;
+  color: seashell;
+  font-family: Helvetica;
+}
+
+h2{
+  font-size: 30px;
+}
+
+/* Navigation */
+.nav {
+  width: 100%;
+  height: 69px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.nav .nav-logo {
+  height: 50px;
+  width: auto;
+  margin-left: 10px;
+
+}
+
+.nav-logo img {
+  max-width: 100%;
+  display: block;
+  max-height: 100%;
+}
+
+
+.nav .navigation ul  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav .navigation a {
+  margin: 10px;
+}
+
+.nav .navigation a.icon {
+  text-decoration: none;
+  display:none;
+}
+
+/* Mission section */
+.mission {
+  background-color: black;
+  width: 100%;
+  margin-top: 69px;
+}
+
+.mission .mission-container{
+  max-width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  background-image: url(img/img-mission-background.jpg);
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  
+}
+
+.mission-container .mission-goal{
+  background-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mission-goal h2{
+  margin: 10px;
+}
+
+.mission-goal h4{
+  margin: 10px;
+}
+
+/* Tea-Month section*/
+
+.tea{
+  background-color: black;
+}
+
+.tea-container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tea-tittle {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.tea-tittle h2 {
+  padding-bottom: 20px;
+  font-weight: 900;
+}
+
+.tea-img-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.tea-img {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+.tea-img img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.tea-img h2 {
+  padding: 10px 0 20px 0;
+}
+
+/* Location Section*/
+
+.location{
+  background-color: black;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.location-wrap{
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  background: url(img/img-locations-background.jpg) no-repeat;
+  background-position: center;
+}
+
+.location .location-wrap .location-tittle {
+  text-align: center;
+  padding: 80px 0 15px 0;
+}
+
+.location .location-wrap .location-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.location .location-wrap .location-container .location-detaile {
+  background-color: black;
+  text-align: center;
+  width: 300px;
+}
+
+.location .location-wrap .location-container .location-detaile h2 {
+  padding: 10px 0;
+}
+
+.location .location-wrap .location-container .location-detaile h4 {
+  padding: 20px 0;
+}
+
+/* Footer section */
+
+footer {
+  width: 100%;
+  background: black;
+  height: 200px;
+  text-align: center;
+}
+footer h2 {
+  padding: 15px;
+}
+footer h5 {
+  padding: 20px;
+}
+
+/* Copyright */
+.copyright-info {
+  background: black;
+  padding: 0 0 30px 20px;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+  
+  .navigation a {
+    display: none;
+  }
+  
+  .nav .navigation a.icon{
+    display:block;
+    margin-right: 15px;
+  }
+
+ 
+  .navigation.responsive {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background: black;
+    height: 360px;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+  }
+
+  .navigation.responsive  ul {
+    display: block;
+    position: absolute;
+    top: 200px;
+    right: 65px;
+  }  
+  
+  
+    .navigation.responsive  a{
+    display: block;
+    margin: 18px;
+  }
+
+  
+  .nav .navigation.responsive a.icon {
+    display: block;
+    font-size: 25px;
+    position:absolute;
+    right: -53px;
+    top: -40px;
+  }
+  .location .location-wrap .location-container .location-detaile{
+    margin: 5px 0;
+  }
+  .location .location-wrap .location-container .location-detaile h2 {
+    padding:  0;
+  }
+  
+  .location .location-wrap .location-container .location-detaile h4 {
+    padding: 0;
+  }
+}
